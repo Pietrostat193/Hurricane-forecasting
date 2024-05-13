@@ -1,7 +1,4 @@
 
-###########################################
-# VARIABLE SELECTION
-###########################################
 # Load libraries
 library(dplyr)
 library(car)
