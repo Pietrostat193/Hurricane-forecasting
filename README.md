@@ -54,7 +54,7 @@ install_if_missing <- function(lib) {
 
 # Apply the function to each library
 sapply(libraries, install_if_missing)
-```markdown
+```
 
 ### Prerequisity Python
 
