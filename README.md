@@ -85,9 +85,8 @@ Instructions and examples for using the project. Show code snippets or screensho
 
 ## Contact
 
-Provide ways for users to get in touch with you.
-
 - **Pietro Colombo** - [https://www.linkedin.com/in/pietro-colombo-62b295129/]
+- pietro.colombo@glasgow.ac.uk
 
 Project Link: "To be put on Archive")
 
