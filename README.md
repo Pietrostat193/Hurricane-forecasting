@@ -9,6 +9,7 @@ and Raffaele Mattera (https://web.uniroma1.it/disse/node/7826).
 ## Table of Contents
 
 - [About the Project](#about-the-project)
+- [Data](#data)
 - [Getting Started](#getting-started)
   - [Prerequisites R](#prerequisitesR)
   - [Prerequisity Python](#prerequisitesPython)
@@ -28,6 +29,13 @@ forecasting hurricane numbers, provide the best results. Moreover, we construct 
 new index showing good properties in anticipating the direction of the future num-
 ber of hurricanes. We consider different evaluation metrics based on both magnitude
 forecasting errors and directional accuracy.
+
+## Data
+National Hurrican Center (Ground truth for prediction market)(https://www.nhc.noaa.gov/)
+PSL El Niño Index Dashboard (https://psl.noaa.gov/enso/dashboard.html)
+Bacelona Supercompuer Center: Seasonal Hurricane Forecasts (https://seasonalhurricanepredictions.bsc.es/)
+Historical hurricane monthly data (https://www.nhc.noaa.gov/data/#monthly)
+Other statistics about hurricanes (https://tropical.atmos.colostate.edu/Realtime/index.php?arch&loc=northatlantic)
 
 ## Getting Started
 
