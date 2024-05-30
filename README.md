@@ -61,14 +61,14 @@ sapply(libraries, install_if_missing)
 In the Python files you need to have the following functioning libraries
 and to change the directory once you are inside the files.
 
-\`\`\`sh
+```python
 import pandas as pd
 import os
 import numpy as np
 from IPython.display import display
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
-\`\`\`
+```
 
 ## Usage
 
@@ -79,9 +79,9 @@ Instructions and examples for using the project. Show code snippets or screensho
 
 Provide ways for users to get in touch with you.
 
-- **Your Name** - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+- **Pietro Colombo** - [https://www.linkedin.com/in/pietro-colombo-62b295129/]
 
-Project Link: [https://github.com/your_username/project_name](https://github.com/your_username/project_name)
+Project Link: "To be put on Archive")
 
 ## Acknowledgements
 
