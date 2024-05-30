@@ -4,7 +4,7 @@ Hurricane Forecasting Project. This is the repository of the paper "Simple yet e
 yearly hurricane forecasting" developed jointly with Phillip Otto (https://www.gla.ac.uk/schools/mathematicsstatistics/staff/philippotto/)
 and Raffaele Mattera (https://web.uniroma1.it/disse/node/7826).
 
-![Project Logo](path/to/logo.png)
+![Project Logo](path/to/logo.png
 
 ## Table of Contents
 
