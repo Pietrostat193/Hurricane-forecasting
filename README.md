@@ -1,4 +1,4 @@
-# Project Name
+# Yearly Hurricane Forecasting
 
 Hurricane Forecasting Project. This is the repository of the paper "Simple yet effective: a comparative study of statistical models for
 yearly hurricane forecasting" developed jointly with Phillip Otto (https://www.gla.ac.uk/schools/mathematicsstatistics/staff/philippotto/)
