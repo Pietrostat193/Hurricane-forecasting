@@ -10,8 +10,8 @@ and Raffaele Mattera (https://web.uniroma1.it/disse/node/7826).
 
 - [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
-  - [Prerequisites R](#prerequisites R)
-  - [Prerequisity Python](#prerequisites Python)
+  - [Prerequisites R](#prerequisitesR)
+  - [Prerequisity Python](#prerequisitesPython)
 - [Usage](#usage)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -37,14 +37,12 @@ a Python library.
 
 ### Prerequisites R
 
-List any R libraries that need to be installed before setting up the project.
+ List of libraries R libraries that need to be installed before setting up the project.
 
 \`\`\`sh
-# List of libraries
 libraries <- c("dplyr", "car", "tscount", "quantreg", "ProbCast", "readr", 
                "tidyverse", "ggplot2", "plotly", "scatterplot3d")
                
-# Function to check and install libraries
 install_if_missing <- function(lib) {
   if (!require(lib, character.only = TRUE)) {
     install.packages(lib, dependencies = TRUE)
@@ -52,7 +50,6 @@ install_if_missing <- function(lib) {
   }
 }
 
-# Apply the function to each library
 sapply(libraries, install_if_missing)
 \`\`\`
 
