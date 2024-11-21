@@ -17,6 +17,7 @@ import pandas as pd
 drive.mount('/content/drive')
 
 # Step 2: Define the path to the folder and files
+# Make sure to have the right path (this is my personal one)
 folder_path = '/content/drive/My Drive/Hurricane_Forecasting_LSTM/'  # Adjust path if necessary
 D = folder_path + 'datasetfinale.csv'
 
