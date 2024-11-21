@@ -164,5 +164,9 @@ plt.show()
 
 # Results
 
+The figure depcits both the confidence interval and the mean preditiion of multiples runs.
+You might see that the actual number of hurricane does not fall within the confidence intervals proving that the LSTM trained on monthly data
+is not able to catch the anomalous years.
 
+![LSTM Predictions Plot](Hurricane_predictions_LSTM.png)
 
