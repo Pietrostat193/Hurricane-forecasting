@@ -118,3 +118,51 @@ metrics_df.to_csv('/content/drive/MyDrive/LSTM_metrics60_100.csv', index=False)
 # Save metrics summary
 mae_df = pd.DataFrame({'Run': range(1, runs + 1), 'MAE': mae_all_runs, 'DA': da_all_runs})
 mae_df.to_csv('/content/drive/MyDrive/LSTM_mae_da_summary60_100.csv', index=False)
+
+
+# LSTM Model Results Visualization
+
+The following Python code demonstrates how to visualize the results of the LSTM model predictions, including the actual targets, average predictions, and confidence intervals.
+
+```python
+# Import necessary libraries
+from google.colab import drive
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# Step 1: Mount Google Drive
+drive.mount('/content/drive')
+
+# Step 2: Define the path to the folder and files
+folder_path = '/content/drive/My Drive/'  # Adjust path if necessary
+file_name = 'LSTM_metrics10_60.csv'  # Ensure the file name is correct
+file_path = os.path.join(folder_path, file_name)
+
+# Step 3: Load the CSV file
+LSTM_metrics = pd.read_csv(file_path)
+
+# Assume the CSV file contains the following columns:
+# 'Year', 'Actual_Targets', 'Average_Predictions', 'Lower_Bound', 'Upper_Bound'
+test_years = LSTM_metrics['Test Year']
+test_targets = LSTM_metrics['Target']
+average_predictions = LSTM_metrics['Average Prediction']
+lower_bound = LSTM_metrics['Lower CI']
+upper_bound = LSTM_metrics['Upper CI']
+
+# Step 4: Plot average predictions with confidence intervals
+plt.figure(figsize=(10, 6))
+plt.plot(test_years, test_targets, label='Actual Targets', marker='o', linestyle='-', color='blue')
+plt.plot(test_years, average_predictions, label='Average Predictions', marker='x', linestyle='--', color='orange')
+plt.fill_between(test_years, lower_bound, upper_bound, color='gray', alpha=0.3, label='95% Confidence Interval')
+plt.xlabel('Year')
+plt.ylabel('Prediction')
+plt.title('Average Predictions with Confidence Intervals')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Results
+
+
+
