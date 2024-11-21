@@ -12,7 +12,6 @@ and Raffaele Mattera (https://web.uniroma1.it/disse/node/7826).
 - [Data](#data)
 - [Getting Started](#getting-started)
   - [Prerequisites R](#prerequisitesR)
-  - [Prerequisity Python](#prerequisitesPython)
 - [Usage](#usage)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
