@@ -8,6 +8,10 @@ and to change the directory once you are inside the files.
 I personally run the files on Google Colab, after having it  connected to my personal drive. So there is no need to set up a working environment 
 on your personal laptop. See LSTM monthly predictions to see how to connect your colab with your drive.
 
+
+-LSTM_noPP.py is the file without using the PSEUDO-PREDICTOR
+-LSTM_wit_Dused.py is the file where the predictions are delivered using the PSEUDO-PREDICTOR
+
 ```python
 import pandas as pd
 import os
