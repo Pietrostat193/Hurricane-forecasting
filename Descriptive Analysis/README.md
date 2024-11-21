@@ -42,14 +42,14 @@ The dataset contains the following variables:
 | time_series2.zwnd200_st           | Standard deviation of zonal wind at 200 hPa.                                    |
 | time_series2.OLR                  | Outgoing Longwave Radiation (OLR) values.                                       |
 | time_series2.Oni                  | Oceanic Niño Index (ONI) values.                                                |
-| MM                                | Monthly mean values for climate indices.                                        |
+| MM                                | Monthly time index                                      |
 | ESPI                              | ENSO Precipitation Index values.                                                |
 | EI                                | Energy Index values.                                                            |
 | LI                                | Landfall Index values.                                                          |
 | MON                               | Month of the year (numerical).                                                  |
-| X130E.80W                         | Climate data for the region between 130°E and 80°W longitude.                   |
-| X160E.80W                         | Climate data for the region between 160°E and 80°W longitude.                   |
-| X180W.100W                        | Climate data for the region between 180°W and 100°W longitude.                  |
+| X130E.80W                         | Tropical Pacific integrated temperature anomalies for the region between 130°E and 80°W longitude.                   |
+| X160E.80W                         | Tropical Pacific integrated temperature anomalies for the region between 160°E and 80°W longitude.                   |
+| X180W.100W                        | Tropical Pacific integrated temperature anomalies for the region between 180°W and 100°W longitude.                  |
 
 ---
 
