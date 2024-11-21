@@ -6,23 +6,11 @@ The project explores historical patterns, statistical measures, and visual repre
 
 ---
 ## Table of Contents
-1. [Overview](#overview)
-2. [Dataset](#dataset)
-3. [Analysis Steps](#analysis-steps)
-4. [Visualizations](#visualizations)
-5. [How to Use](#how-to-use)
-6. [Results](#results)
-7. [Contributing](#contributing)
-8. [License](#license)
+1. [Dataset](#dataset)
+2. [Descriptive Analysis](#Descriptive Analysis)
+3. [GraphicalPlot_VariablesSelection](#GraphicalPlots_VariablesSelection)
 
 ---
-
-## Overview
-
-Hurricanes are among the most destructive natural disasters, and accurate forecasting can save lives and reduce economic losses. This project performs a detailed descriptive analysis of the historical hurricane forecasting data to:
-- Understand trends over time.
-- Evaluate prediction accuracy using various metrics.
-- Visualize relationships between different predictors and hurricane intensities.
 
 ---
 
@@ -34,7 +22,7 @@ The dataset used for this analysis is stored in a CSV file (`datasetfinale.csv`)
 
 ---
 
-## Analysis Steps
+## Descriptive Analysis
 
 The descriptive analysis includes the following steps:
 
@@ -46,21 +34,7 @@ The descriptive analysis includes the following steps:
 
 ---
 
-## Visualizations
-
-The repository includes several plots to summarize and communicate the findings.
-
-### 1. **Time Series Trends**
-![Time Series Trends](images/time_series_trends.png)
-> Displays the yearly trends of actual hurricane activity and predictions.
-
-### 2. **Correlation Heatmap**
-![Correlation Heatmap](images/correlation_heatmap.png)
-> Highlights the relationships between predictors and targets.
-
-### 3. **Prediction Accuracy**
-![Prediction Accuracy](images/prediction_accuracy.png)
-> A comparison of predicted values vs. actual targets over time.
+## Graphical Variables selection
 
 
 
