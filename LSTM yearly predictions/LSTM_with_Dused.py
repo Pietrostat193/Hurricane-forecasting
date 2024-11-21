@@ -14,8 +14,9 @@ from tensorflow.keras.layers import LSTM, Dense
 
 # Display the DataFrame
 
-# Specify the directory containing the files
-directory = 'C:/Users/2692812C/OneDrive - University of Glasgow/Desktop/Projects/Glasgow-Hurricanes-main/Glasgow-Hurricanes-main/4__forecast_andComparingModel'
+# Specify the directory containing the files 
+# I usually run the code in colab so it makes easier the setup of the working environment.
+# directory = 'set your personal dirctory'
 D = pd.read_csv(os.path.join(directory, "D_python.csv"))
 
 # Initialize variables to store results
