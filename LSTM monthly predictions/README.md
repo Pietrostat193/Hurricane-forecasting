@@ -1,6 +1,6 @@
-# LSTM Model for Hurricane Forecasting
+# LSTM Model trained on monthly data for yearly Hurricane Forecasting
 
-This Python script implements an LSTM model for hurricane forecasting using historical data. The code is designed for Google Colab and requires data stored on Google Drive.
+This Python script implements an LSTM model for hurricane forecasting using historical data. The code is designed for Google Colab and requires data stored on Google Drive. All the predictions are performed sum of monthly predictions, since the challange is to guess the number of hurricanes in years 12 months advance.
 
 ```python
 #!pip install GPy
@@ -161,6 +161,7 @@ plt.title('Average Predictions with Confidence Intervals')
 plt.legend()
 plt.grid(True)
 plt.show()
+```
 
 # Results
 
