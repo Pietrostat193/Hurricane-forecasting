@@ -1,5 +1,6 @@
 ## Stepwise Selection on Decomposed Hurricane Time-Series
 The repository contains an R file for stepwise variable selection.
+Note that some variables with very low linear correlation with hurricane counts are removed, preliminarly to the stepwise selection.
 
 To evaluate the predictive power of our variables beyond the structural components of the hurricane time-series, we performed a stepwise selection on the decomposed data. The time-series was decomposed into trend, seasonal, and residual components. Our primary goal was to identify predictors that are informative for forecasting the **non-structural component**—the residuals—which represent the unexplained variability after accounting for trends and seasonality.
 
