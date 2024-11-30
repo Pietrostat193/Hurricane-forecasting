@@ -4,6 +4,25 @@ D_used <- read_csv("D_used.csv")
 #we removed these components.
 D_f<- D_used %>% select(-remainder, -trend, -stl_s, -seasonal, -stl_t)
 
+df<-read_csv("data_indexes_+_Hur.csv")
+# Ensure necessary libraries are loaded
+library(dplyr)
+
+# Calculate yearly statistics
+  yearly_stats <- df %>%
+  group_by(Year) %>%
+  summarise(
+    `Hurricane Count` = sum(`Hurricane Count`, na.rm = TRUE),
+    across(-c(`Hurricane Count`), ~ mean(.x, na.rm = TRUE))
+  )
+
+yearly_stats<- yearly_stats %>%
+  select(-c(`Month`, `MON`, `...1`))
+
+
+lagged_stats <- yearly_stats %>%
+  mutate(across(-c(Year, `Hurricane Count`), ~ lag(.x, 1), .names = "lag_{.col}"))
+
 
 
 # The goal is to identify the best predictors for forecasting the residuals 
@@ -18,7 +37,7 @@ D_f<- D_used %>% select(-remainder, -trend, -stl_s, -seasonal, -stl_t)
 # Function to perform forward selection
 
 forward_select <- function(data, response) {
-  data<- data[, -which(names(data) == "target")]
+  #data<- data[, -which(names(data) == "stl_r")]
   data=na.omit(data)
   predictors <- setdiff(names(data), response)
   data1=as.data.frame(apply(data,2,scale))
@@ -32,6 +51,7 @@ forward_select <- function(data, response) {
       formula <- reformulate(c(selected_predictors, predictors[i]), response)
       model <- lm(formula, data = data1)
       candidate_aic[i] <- AIC(model)
+      print(i)
     }
     
     best_candidate <- which.min(candidate_aic)
@@ -50,5 +70,9 @@ forward_select <- function(data, response) {
 }
 library(tidyverse)
 
-D_f<- D_used %>% select(-remainder, -trend, -stl_s, -seasonal, -stl_t)
-forward_select(D_f, "stl_r")
+a<-as.data.frame(cbind(yearly_stats[-c(1,2,3,23),],"stl_r"=D_f$stl_r, "PPt"=D_f$PPt))
+a<-na.omit(a)
+
+a<- a %>% select(-MM)
+colnames(a)[2]="HC"
+forward_select(a, "stl_r")
